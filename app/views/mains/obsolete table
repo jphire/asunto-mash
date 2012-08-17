@@ -1,0 +1,17 @@
+%tr
+              %td
+                %a{ :href => "#{a[:link]}" }
+                  = image_tag a[:pic]
+              %td
+                %a{ :href => "#{a[:link]}" }
+                  = a[:type]
+              %td
+                %a{ :href => "#{a[:link]}" }
+                  = a[:price]
+              %td
+                %a{ :href => "#{a[:link]}" }
+                  = a[:address]
+              %td= a[:size]
+              %td= a[:year]
+              %td
+                = image_tag a[:pic2]

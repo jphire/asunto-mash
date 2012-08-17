@@ -1,0 +1,12 @@
+  #a_hash = {}
+        #keys = [:type, :price, :address, :size, :year] 
+        #a_hash[:type] = appartment.text
+        #temp = appartment.find(:css, 'td a + a')
+        #a_hash[:link] = "http://kuluttaja.etuovi.com" + temp[:href]
+        #if temp.has_css? ':first-child'
+        #  a_hash[:pic] = temp.find(':first-child')[:src]
+        #end
+        #a_hash = Hash[keys.zip(vals)]
+        #a_hash[:size] = Hash[s.map { |k| [s.index(k), k]}]
+        #a_hash[:pic2] = appartment.find(:css, "td.lastTD a img")[:src]
+      

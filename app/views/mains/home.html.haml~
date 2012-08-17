@@ -23,7 +23,7 @@
             %tr
               = raw a
         
-      = raw @results[1]
+      = raw results[1]
                 
       %ul
         - @results[2].each do |a|
