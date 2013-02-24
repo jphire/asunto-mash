@@ -19,13 +19,15 @@
           %th Näyttö
           %th Välittäjä
         %tbody
-          - @results[0].each do |a|
-            %tr
+          - if @results[0]
+            - @results[0].each do |a|
+              %tr
               = raw a
         
       = raw @results[1]
                 
       %ul
-        - @results[2].each do |a|
-          %li
-            = raw a
+        - if @results[2]
+          - @results[2].each do |a|
+            %li
+              = raw a

@@ -48,20 +48,20 @@ class MainsController < ApplicationController
         temp_list2.push a_hash
       end
       
-      temp_list3 = []
-      Capybara.app_host = "http://www.jokakoti.fi/etusivu"   
-      visit('/')
-      i = find(:css, '#searchbox .areapicker input')[0]
-      fill_in i, :with => q
-      button = find(:css, '#searchButtons :first-child :first-child')[0]
-      click_button button
-      wait_until { page.find('#maincontent').visible? }
-     
-      all(:css, "#searchResultsListPanel li").each do |appartment| 
-        a_hash = appartment.base.inner_html
-        temp_list3.push a_hash
-      end
-      
-      return temp_list1, temp_list2, temp_list3
+#      temp_list3 = []
+#      Capybara.app_host = "http://www.jokakoti.fi/etusivu"   
+#      visit('/')
+#      i = find(:css, '#searchbox .areapicker input')[0]
+#      fill_in i, :with => q
+#      button = find(:css, '#searchButtons :first-child :first-child')[0]
+#      click_button button
+#      wait_until { page.find('#maincontent').visible? }
+#     
+#      all(:css, "#searchResultsListPanel li").each do |appartment| 
+#        a_hash = appartment.base.inner_html
+#        temp_list3.push a_hash
+#      end
+#      
+      return temp_list1, temp_list2
     end
 end
